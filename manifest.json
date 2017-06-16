@@ -1,0 +1,11 @@
+{
+	"name": "Make Wealthfront Green Again",
+	"version": "0.1",
+	"description": "Money is green, not purple",
+	"manifest_version" : 2,
+	"content_scripts" : [{
+			"matches" : ["https://www.wealthfront.com/*"],
+			"js" : ["jquery.js", "main.js"]
+		}],
+	"permissions": ["tabs", "activeTab"]
+}
